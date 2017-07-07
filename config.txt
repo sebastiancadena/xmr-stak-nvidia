@@ -15,7 +15,7 @@
  * A filled out configuration should look like this:
  * "gpu_threads_conf" : 
  * [
- *     { "index" : 0, "threads" : 17, "blocks" : 60, "bfactor" : 0, "bsleep" :  0, "affine_to_cpu" : false},
+ *     { "index" : 0, "threads" : 52, "blocks" : 104, "bfactor" : 0, "bsleep" :  0, "affine_to_cpu" : false},
  * ],
  */
 "gpu_threads_conf" : 
@@ -30,7 +30,7 @@ null,
  * tls_secure_algo - Use only secure algorithms. This will make us quit with an error if we can't negotiate a secure algo.
  * tls_fingerprint - Server's SHA256 fingerprint. If this string is non-empty then we will check the server's cert against it.
  */
-"use_tls" : false,
+"use_tls" : true,
 "tls_secure_algo" : true,
 "tls_fingerprint" : "",
 
@@ -39,9 +39,9 @@ null,
  * wallet_address - Your wallet, or pool login.
  * pool_password  - Can be empty in most cases or "x".
  */
-"pool_address" : "pool.supportxmr.com:3333",
-"wallet_address" : "",
-"pool_password" : "",
+"pool_address" : "us-east.cryptonight-hub.miningpoolhub.com:20580",
+"wallet_address" : "scadena.3",
+"pool_password" : "x",
 
 /*
  * Network timeouts.
@@ -90,7 +90,7 @@ null,
  * output_file  - This option will log all output to a file.
  *
  */
-"output_file" : "",
+"output_file" : "mining.log",
 
 /*
  * Built-in web server
